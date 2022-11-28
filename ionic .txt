@@ -1,0 +1,1 @@
+ionic serve --external --host="192.168.0.23" --port="8100" --ssl

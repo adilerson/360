@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "poppins";
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+
+body{
+    font-family:'poppins';
+    background: #373e46 !important;
+}
+
+.text-center{
+    text-align: center;
+}
+.ws-100{
+    width:100%;
+}
+.lastVideo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+.qrcode{
+    /*text-align: center;*/
+    /*margin: 1rem;*/
+}
+canvas{
+    background: white;
+    width: 10rem !important;
+    padding: 0.7rem;
+    border-bottom: 2px solid white;
+    border-radius: 0rem 0rem 0.8rem 0.8rem;
+    box-shadow: 1px 1px 10px #272727;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+}
+.lastVideoEmbed{
+    width: 36vh !important;
+    height: 66vh !important;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 0.5rem;
+}
+video{
+    margin: 0 !important;
+    width: 41vh !important;
+}
+.titulo{
+    width: 100%;
+    /* padding: 3rem 0rem 1rem 0rem; */
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #272727;
+}
+.videoEmbed{
+    width: 10rem !important;
+    height: 17rem !important;
+}
+
+
+
+.videoEmbedModal{
+    max-width: 85% !important;
+}
+
+.videoPai{
+    text-align: center;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+}
+.video{
+    position: relative;
+    /*width: 10rem;*/
+    height: 17rem;
+    /*border: 1px solid #e5e5e5;*/
+    /*margin: 0rem 1rem 0rem 0rem;*/
+    /*padding: 1rem;*/
+    border-bottom: none !important;
+    border-radius: 0.3rem 0.3rem 0rem 0rem;
+    box-shadow: 1px 1px 10px rgb(100, 100, 100);
+    
+    background-size: cover;
+}
+.videos{
+
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.download{
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 1rem;
+    right: 1rem;
+    opacity: 0.7;
+    /*background-image: url('/360/img/download.png');*/
+}
+.desfocado canvas{
+    filter: blur(0.15rem);
+}
+.btn{
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /*text-transform: uppercase;*/
+    font-size: 1.3rem;
+    -webkit-box-shadow: 0 10px 30px 0 rgb(95 186 233 / 40%);
+    box-shadow: 0 10px 30px 0 rgb(95 186 233 / 40%);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 15px 20px 14px 20px;
+    cursor:pointer;
+}
+.transition{
+    -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fefefe;
+    margin: 2% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 0.5rem;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-height: -webkit-fill-available;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: 2rem;
+    text-align: center;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:link { text-decoration: none; }
+
+
+  a:visited { text-decoration: none; }
+  
+  
+  a:hover { text-decoration: none; }
+  
+  
+  a:active { text-decoration: none; }
+
+
+  /* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }

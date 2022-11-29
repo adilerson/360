@@ -28,7 +28,10 @@ if (isset($data->porta)){
 }
  
 */
-$porta = '5';
+if (!isset($porta))
+{
+    $porta = '5';
+}
 
     $port = "COM".$porta;
     
